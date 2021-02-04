@@ -1,0 +1,33 @@
+{
+  "configs": [
+    "global.xml",
+    "apios-servicenow-sapi-implementation.xml",
+    "apiops-servicenow-sapi-interface.xml"
+  ],
+  "secureProperties": [
+    "key"
+  ],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:apiops-servicenow-sapi:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.3.0",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "api/Datatype/incident-datatype.raml",
+        "api/servicenow-system-api.raml",
+        "apiops-servicenow-sapi-interface.xml",
+        "apios-servicenow-sapi-implementation.xml",
+        "global.xml",
+        "log4j2.xml",
+        "servicenow-system-api-dev.yaml"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
